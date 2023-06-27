@@ -1,0 +1,9 @@
+@media screen and (min-width: 428px) and (max-width: 767px) {
+    .container {
+        max-width: 428px;
+    }
+
+    .features .list {
+        width: 100%;
+    }
+}
