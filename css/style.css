@@ -62,6 +62,8 @@ h1,h2,h3,h4,h5, p, ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .list{
@@ -104,6 +106,18 @@ img {
     transition: color var(--time) var(--time-func);
 }
 
+.page-nav .current-page::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    bottom: -1px;
+    left: 0;
+    background-color: #404bbf;
+    border-radius: 2px;
+    position: absolute;
+    width: 100%;
+}
+
 /* .nav-list {
     display: flex;
     gap: 40px;
@@ -130,7 +144,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #404bbf;;
+    color: #2E2F42;
     padding: 24px 0;
     position: relative;
     transition: color var(--time) var(--time-func)
@@ -492,7 +506,6 @@ img {
 .staff-list-item {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
-    /* width: 24%; */
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);

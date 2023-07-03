@@ -277,6 +277,10 @@
         gap: 24px;
     }
 
+    .staff-list-item {
+        width: calc((100% - 72px) / 4);
+    }
+
 
     .customers .container {
         padding: 120px 15px;
